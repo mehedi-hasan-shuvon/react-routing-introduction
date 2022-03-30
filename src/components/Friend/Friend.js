@@ -11,8 +11,8 @@ const Friend = (props) => {
     return (
         <div>
             <h2>Name:{name}</h2>
-            <Link to={`/friend/${id}`}>Show Details</Link>
-            <button onClick={showFriendDetail}>price:{price} id:{id}</button>
+            <Link to={`/friend/${id}`} friend={props.friend}>Show Details</Link>
+            <button onClick={showFriendDetail} friend={props.friend}>price:{price} id:{id}</button>
         </div>
     );
 };
